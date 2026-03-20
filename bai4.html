@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Trang Bootstrap</title>
+</head>
+
+<body class="container mt-3">
+
+  <h3 class="text-primary"></h3>
+
+  <!-- Nội dung bạn viết ở đây -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS riêng -->
+<link rel="stylesheet" href="checkbox1.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="text-center text-light mb-4 bg-danger p-2 rounded">Các loại kem trong cửa hàng</h2>
+
+        <!-- Danh sách kem -->
+        <div class="form-check kem-que">
+            <input class="form-check-input" type="checkbox" value="Kem que" name="kem">
+            <label class="form-check-label text-dark">Kem que</label>
+        </div>
+
+        <div class="form-check kem-dau">
+            <input class="form-check-input" type="checkbox" value="Kem dâu" name="kem">
+            <label class="form-check-label text-dark">Kem dâu</label>
+        </div>
+
+        <div class="form-check kem-bo">
+            <input class="form-check-input" type="checkbox" value="Kem bơ" name="kem">
+            <label class="form-check-label text-dark">Kem bơ</label>
+        </div>
+
+        <div class="form-check kem-vani">
+            <input class="form-check-input" type="checkbox" value="Kem vani" name="kem">
+            <label class="form-check-label text-dark">Kem vani</label>
+        </div>
+
+        <!-- Nút chọn kem -->
+        <div class="text-center mt-4">
+            <button class="btn btn-success" onclick="chonKem()">Chọn kem</button>
+        </div>
+
+        <!-- Kết quả -->
+        <div id="kemDaChon"></div>
+
+    </div>
+</div>
+
+<!-- Script JS -->
+<script src="checkbox2.js"></script>
+
+</body>
+</html>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

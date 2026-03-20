@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<title>Xu ly su kien chuot</title>
+<meta charset="utf-8">
+</head>
+
+<body style="font-family:arial">
+
+<form>
+<input 
+type="button" 
+value="Gui"
+onclick="gui()"
+onmousemove="thongbao('Ban dang di chuyen chuot vao nut Gui')">
+
+<br><br>
+
+<label>Ho Ten:</label>
+<input 
+type="text" 
+name="HoTen"
+onmousemove="thongbao('Ban dang di chuyen chuot vao textbox HoTen')">
+<br><br>
+
+<input 
+type="radio" 
+name="GioiTinh"
+value="Nam"
+onmousemove="thongbao('Ban dang di chuyen chuot vao Nam')"> Nam
+
+<input 
+type="radio" 
+name="GioiTinh"
+value="Nu"
+onmousemove="thongbao('Ban dang di chuyen chuot vao Nu')"> Nu
+
+</form>
+
+<script>
+
+function thongbao(noidung){
+    window.status = noidung;
+}
+function gui(){
+    alert("Bạn đang di chuyển chuột vào nút");
+}
+
+</script>
+
+</body>
+
+</html>

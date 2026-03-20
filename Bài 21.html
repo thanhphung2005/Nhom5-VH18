@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 21</title>
+    <script>
+        function kiemtra(){
+            let noidung = document.getElementById("noidung").value;
+            let sokitu = document.getElementById("sokitu");
+            sokitu.value = noidung.length;
+            if (noidung.length > 200) {
+                alert("Bạn đã nhập quá 200 ký tự!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="sokitu" readonly><br/>
+    <textarea id="noidung" onkeyup="kiemtra()"></textarea>
+</body>
+</html>
