@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container btn btn-primary text-center mt-4">
+        <form class="form-control">
+            <label class="form-lable"> hay chon mau </label><br>
+            <select onchange="doimau()">
+                <option value="">chọn màu</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="brown">brown</option>
+                <option value="lavender">lavender</option>
+            </select>
+        </form>
+        <script>
+            function doimau(){
+                let mau= document.querySelector("select").value;
+                document.body.style.backgroundColor = mau;
+            }
+        </script>
+
+    </div>
+</body>
+</html>
