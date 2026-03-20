@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tuổi</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+</head>
+
+<body>
+
+
+<script language="JavaScript">
+    var D = new Date();
+    var NamSinh, NamHienTai;
+
+    NamHienTai = D.getFullYear();
+
+    do {
+        NamSinh = prompt("Bạn sinh năm bao nhiêu : ", "");
+    }
+    while (parseInt(NamSinh) > NamHienTai); 
+    alert("Tuổi của bạn bây giờ là : " + (NamHienTai - NamSinh));
+</script>
+
+</body>
+</html>
